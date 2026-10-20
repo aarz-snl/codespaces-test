@@ -1,0 +1,16 @@
+{
+  "name": "codespaces-test",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "postCreateCommand": "npm install -g opencode-ai",
+  "remoteEnv": {
+    "ANTHROPIC_API_KEY": "${localEnv:ANTHROPIC_API_KEY}"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": []
+    }
+  }
+}
